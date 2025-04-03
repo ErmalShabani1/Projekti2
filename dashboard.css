@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header .nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+header button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+header button a {
+    color: white;
+    text-decoration: none;
+}
+
+header button:hover {
+    background-color: #0056b3;
+}
+
+.stats {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 40px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stats h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.stats table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.stats th, .stats td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.stats th {
+    background-color: #007BFF;
+    color: white;
+    font-size: 1.1em;
+}
+
+.stats td {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.stats tr:hover {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+        text-align: left;
+    }
+
+    header .nav-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .stats {
+        padding: 30px 15px;
+        width: 90%;
+    }
+
+    .stats h2 {
+        font-size: 1.6em;
+    }
+
+    .stats th, .stats td {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+        text-align: left;
+    }
+
+    header .nav-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    header button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .stats {
+        padding: 20px 10px;
+        width: 100%;
+    }
+
+    .stats h2 {
+        font-size: 1.4em;
+    }
+
+    .stats th, .stats td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
